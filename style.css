@@ -1,0 +1,1028 @@
+/* Body Mobile */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  max-width: 390px;
+  padding: 0;
+  background-color: #ffffff;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.logo {
+  width: 60px;   /* ubah sesuai kebutuhan */
+  height: auto;   /* biar ga gepeng */
+  margin-right: 5px;
+}
+
+.navbar {
+  background-color: white;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+.navbar .logo {
+  width: 60px;
+  height: auto;
+}
+
+.menu {
+  font-size: 14px;
+  color: #546B41;
+  align-items: center;
+  padding-left: 0px;
+  display: flex;
+  gap: 10px;
+}
+
+.menu a {
+  font-size: 14px;
+  color: #546B41;
+  padding-left: 0px;
+  gap: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.active-menu {
+  border-bottom: 1.5px solid #546B41;
+  font-weight: 700; /* bikin lebih tebal */
+  padding-bottom: 2px;
+  margin-top: 10px;
+}
+
+.right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: right;
+  font-size: 14px;
+  margin-top: px;
+}
+
+.right i{
+  font-size: 17px;
+}
+
+.navbar .right {
+  justify-content: right;
+  font-size: 14px;
+  color: #546B41;
+  padding-left: 30px;
+  margin-right: 10px;
+  margin-top: -1px;
+  margin-right: 10px;
+}
+
+.cart-link {
+  color: #546B41;
+  font-size: 17px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -5px;
+}
+
+.cart-link:hover {
+  opacity: 0.7;
+}
+
+/* Banner */
+.banner {
+  margin: 10px;
+  border-radius: 0;
+  overflow: hidden;
+  position: relative;
+  height: 235px;
+}
+
+.banner img {
+  width: 100%;
+  border-radius: 0px;
+}
+
+.banner-text {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  bottom: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color:#546B41;
+  font-weight:600;
+  font-size: 24px;
+}
+
+.banner button {
+  margin-top: 40px;
+  padding: 5px 5px;
+  background-color:#546B41;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  width: 165px;
+}
+
+/* Tentang Produk */
+.section {
+  padding: 10px;
+  margin-top: 20px;
+  color: #545454;
+  background-color:#FFF8EC;
+}
+
+.section h3 {
+  color:#545454;
+  font-weight: 600;
+  font-size: 20x;
+  margin-top: 0px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.feature i {
+  margin-top: 10px;
+  margin-left: -12px;
+  font-size: 25px;  /* khusus icon */
+  color: #545454;
+  flex-shrink: 0;
+  padding-left: 20px;
+  width: 40px;
+  text-align: center;
+  align-items: self-end;
+}
+
+.feature .text {
+  font-size: 12px;
+  margin-top: 0px;
+}
+
+.feature b {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  margin-left: 10px;
+  font-weight: 450;
+  font-size: 16px;
+  color: #545454;
+}
+
+.feature p {
+  margin: 0px;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #545454;
+}
+
+/* Produk */
+.title {
+  color:#546B41;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.products {
+  padding: 15px;
+  margin-top: -20px;
+  color:#546B41;
+  background-color: #99AD7A;
+}
+
+.product-list {
+  display: flex;
+  gap: 10px;
+}
+
+.product-card {
+  margin: 4px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card p{
+  font-size: 14px;
+  justify-content: flex-start;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.product-card .price{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.product-card img {
+  width: 100%;
+  height: fit-content;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center; /* TAMBAHKAN INI */
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.product-card button {
+  margin-top: auto; /* dorong tombol ke bawah */
+  padding: 6px;
+  background-color:#99AD7A;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Testimoni */
+.title2 {
+  color:#546B41;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.testimoni {
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.testi-box {
+  display: flex;
+  gap: 10px;
+  margin-top: -35px;
+}
+
+.testi {
+  flex: 1;
+  background-color:#546B41;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  width: 50%;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  color: #ffffff;
+}
+
+.testi i {
+  color:#ffffff;
+  margin-top: 2px;
+  font-size: medium;
+}
+
+/* FOOTER */
+.footer {
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* BAGIAN ATAS (2 KOLOM) */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 100px;
+}
+
+/* KOLOM */
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* LINK */
+.footer a {
+  text-decoration: none;
+  color:#545454;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* COPYRIGHT */
+.footer-bottom {
+  text-align: center;
+  font-size: 12px;
+  color: #737373;
+  margin-top: 30px;
+}
+
+
+
+/*STYLE LOGIN */
+/* Navbar */
+.logo {
+  width: 60px;   /* ubah sesuai kebutuhan */
+  height: auto;   /* biar ga gepeng */
+  margin-right: 5px;
+}
+
+
+.navbar {
+  background-color: white;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+
+.navbar .logo {
+  width: 60px;
+  height: auto;
+}
+
+.menu {
+  font-size: 14px;
+  color: #546B41;
+  padding-left: 0px;
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.menu a {
+  font-size: 14px;
+  color: #546B41;
+  padding-left: 0px;
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  margin-top:-5px;
+}
+
+
+.right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: right;
+  font-size: 14px;
+  margin-top: -7px;
+}
+
+
+.right i{
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+
+.navbar .right {
+  justify-content: right;
+  font-size: 14px;
+  color: #546B41;
+  padding-left: 30px;
+}
+
+
+.back-btn {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  display: inline-block;
+  margin: 10px 0 0 15px;
+  margin-left: 10px;
+  color: #546B41;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+
+/* MAIN */
+.main-content {
+  display: flex;
+  top: 10px;
+  justify-content: center;
+  align-items: flex-start; /* penting: jangan center */
+  min-height: 80vh;
+  padding: 0%;
+}
+
+
+/* CARD */
+.auth-container {
+    width: 400px;
+    text-align: center;
+}
+
+
+/* TITLE */
+.auth-title {
+    color:#546B41;
+    margin-bottom: -20px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+
+.auth-subtitle {
+    color:#546B41;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: center;
+}
+
+
+/* TAB */
+.auth-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    color: #545454;
+}
+
+
+.tab-btn {
+    padding: 10px 50px;
+    border-radius: 15px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color:#2a3421;
+}
+
+
+.tab-btn.active {
+    padding: 10px 50px;
+    border-radius: 15px;
+    border: none;
+    background:#546B41;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+
+/* FORM */
+.auth-form {
+    text-align: left;
+}
+
+
+.form-title {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: #546B41;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.auth-form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    color: #545454;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* INPUT */
+.auth-form input {
+    width: 325px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    padding: 10px;
+    border: none;
+    background: #99AD7A;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    gap: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.auth-form input::placeholder {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+/* PASSWORD */
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.password-wrapper i {
+    position: absolute;
+    margin-right: 30px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-70%);
+    color: white;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* BUTTON */
+.login-btn {
+    width: 345px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 8px;
+    border: none;
+    background: #546B41;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+/* Saat ditekan */
+.login-btn:active {
+  background-color: #2b3622; /* warna lebih gelap */
+}
+
+
+/* LINKS AREA */
+
+.links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* LUPA PASSWORD */
+.links .lupa {
+  font-size: 13px;
+  font-weight: 300;
+  justify-content: center;
+  display: flex;
+  text-decoration: underline;
+}
+
+.lupa:active {
+  color: #2563EB;
+}
+
+/* DIVIDER */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+}
+
+.divider span {
+    margin: 10px;
+    font-size: 13px;
+    font-weight: 500 !important; /* paksa tipis */
+    color: #777;
+}
+
+/* GOOGLE BUTTON */
+.google-btn {
+    width: 345px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    background: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: 'Poppins', sans-serif;
+    color: #545454;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.google-btn:hover {
+    background: #f5f5f5;
+}
+
+/* GOOGLE ICON */
+.google-icon {
+    width: 30px;
+}
+
+/* REGISTER */
+.daftar {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-size: 14px;
+  font-weight: 300;
+  justify-content: center;
+  display: flex;
+}
+
+.daftar span {
+  margin-left: 5px;
+  font-weight:900;
+  color: #546B41;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+
+
+/*Style Daftar */
+/* Reset dan variabel warna - SESUAI DENGAN FOTO */
+/*STYLE LOGIN */
+/* Navbar */
+.logo {
+  width: 60px;   /* ubah sesuai kebutuhan */
+  height: auto;   /* biar ga gepeng */
+  margin-right: 5px;
+}
+
+.navbar {
+  background-color: white;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+.navbar .logo {
+  width: 60px;
+  height: auto;
+}
+
+.menu {
+  font-size: 14px;
+  color: #546B41;
+  padding-left: 0px;
+  display: flex;
+  gap: 10px;
+}
+
+.right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: right;
+  font-size: 14px;
+}
+
+.login-link {
+  text-decoration: none;
+  color: #546B41;
+}
+
+.right i{
+  font-size: 17px;
+  display: flex;
+  gap: 10px;
+  align-items:end;
+  justify-content: right;
+}
+
+.navbar .right {
+  justify-content: right;
+  font-size: 14px;
+  color: #546B41;
+  padding-left: 30px;
+}
+
+.back-btn {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  display: inline-block;
+  margin: 10px 0 0 15px;
+  margin-left: 10px;
+  color: #546B41;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* MAIN */
+.main-content {
+  display: flex;
+  top: 10px;
+  justify-content: center;
+  align-items: flex-start; /* penting: jangan center */
+  min-height: 80vh;
+  padding: 0%;
+}
+
+/* CARD */
+.auth-container {
+    width: 400px;
+    text-align: center;
+}
+
+/* TITLE */
+.auth-title {
+    color:#546B41;
+    margin-bottom: -20px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.auth-subtitle {
+    color:#546B41;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: center;
+}
+
+/* TAB */
+.auth-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    color: #545454;
+}
+
+.tab-btn {
+    padding: 10px 50px;
+    border-radius: 15px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color:#2a3421;
+}
+
+.tab-btn.active {
+    padding: 10px 50px;
+    border-radius: 15px;
+    border: none;
+    background:#546B41;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* FORM */
+.auth-form {
+    text-align: left;
+}
+
+.form-title {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: #546B41;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.auth-form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    color: #545454;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* INPUT */
+.auth-form input {
+    width: 325px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    padding: 10px;
+    border: none;
+    background: #99AD7A;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    gap: 20px;
+}
+
+.auth-form input::placeholder {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* PASSWORD */
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper i {
+    position: absolute;
+    margin-right: 30px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-70%);
+    color: white;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BUTTON */
+.daftar-btn {
+    width: 345px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 8px;
+    border: none;
+    background: #546B41;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+/* Saat ditekan */
+.daftar-btn:active {
+  background-color: #2b3622; /* warna lebih gelap */
+}
+
+/* LINKS */
+.auth-note {
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 300;
+  justify-content: center;
+  display: flex;
+}
+
+.auth-link {
+  margin-left: 5px;
+  font-weight:900;
+  color: #546B41;
+}
+
+.links span {
+  margin-left: 5px;
+  font-weight:900;
+  color: #546B41;
+}
+
+
+
+
+
+/* STYLE HALAMAN KERANJANG */
+
+/* HEADER */
+.cart-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  display: inline-block;
+  margin: 10px 0 0 15px;
+  margin-left: 10px;
+  color: #546B41;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* JUDUL */
+.cart-heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: #545454;
+  margin-left: 25px;
+  margin-top: -3px;
+
+}
+
+/* CONTENT TENGAH */
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* ICON */
+.cart-icon-box img {
+  width: 200px;
+  margin-bottom: 5px;
+}
+
+/* JUDUL BESAR */
+.cart-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  justify-content: center;
+  color: #546B41;
+}
+
+/* SUBTITLE */
+.cart-subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+/* BUTTON */
+.product-btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 0px;
+  background: #546B41;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 600;
+   font-family: 'Poppins', sans-serif;
+}

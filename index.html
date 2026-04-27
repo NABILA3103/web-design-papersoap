@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Paper Soap Eco</title>
+
+
+<link rel="stylesheet" href="style.css">
+<!-- Font Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+
+<body>
+<!-- Navbar -->
+<div class="navbar">
+  <img src="images/logo.png" class="logo">
+  <div class="menu">
+    <a>Home</a>
+    <a>Produk</a>
+    <a>Artikel</a>
+    <a>Tentang</a>
+  </div>
+
+  <div class="right">
+    <a class="active-menu">Login</a>
+    <i class="fa-solid fa-cart-shopping"></i>
+  </div>
+</div>
+
+
+<!-- Back button -->
+<a href="index.html" class="back-btn">
+  <i class="fa-solid fa-arrow-left"></i>
+</a>
+
+
+<!-- MAIN -->
+    <main class="main-content">
+        <div class="auth-container">
+            <h1 class="auth-title">Buat Akun Baru</h1>
+            <p class="auth-subtitle">Daftar untuk mulai berbelanja</p>
+
+
+<!-- TAB -->
+       <div class="auth-tabs">       
+        <a href="Login.html" class="tab-btn">
+            Login
+            </a>
+        <a href="Daftar.html" class="tab-btn active">
+            Daftar
+            </a>
+    </div>
+
+<!-- FORM -->
+    <form class="auth-form">
+        <h2 class="form-title">Daftar</h2>
+
+
+<!-- Nama Lengkap -->
+    <label class="form-label">Nama Lengkap</label>
+    <input 
+        type="text" 
+        class="form-input" 
+        placeholder="Masukkan Nama Lengkap" 
+        required>
+
+<!-- Email -->
+    <label class="form-label">Email</label>
+    <input 
+        type="email" 
+        class="form-input" 
+        placeholder="Masukkan Email Anda" 
+        required>
+
+<!-- Password -->
+    <label class="form-label">Password</label>
+    <div class="password-wrapper">
+        <input 
+            type="password" 
+            class="form-input" 
+            placeholder="Buat Password" 
+            required
+            minlength="6">
+            <i class="fa fa-eye password-icon"></i>
+    </div>
+
+<!-- Konfirmasi Password -->
+    <label class="form-label">Konfirmasi Password</label>
+    <div class="password-wrapper">
+    <input 
+        type="password" 
+        class="form-input" 
+        placeholder="Konfirmasi Password" 
+        required
+        minlength="6">
+        <i class="fa fa-eye password-icon"></i>
+    </div>
+
+<!-- Button -->
+    <button type="submit" class="daftar-btn">
+        Daftar
+    </button>
+
+<!-- Link -->
+    <p class="auth-note">Sudah Punya Akun? <a href="Login.html" class="auth-link">Login</a></p>
+    </form>
+        </div>
+    </main>
+
+
+</body>
+</html>
+
